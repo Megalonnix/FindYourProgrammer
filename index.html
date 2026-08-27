@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FindYourProgrammer</title>
+</head>
+<body>  
+  <main id="container-principal">
+
+    <div id="caixa-para-dicas">
+      <p>
+        <strong>Hint Balloon:</strong>
+        when you click the button to find the person you're searching for, it will 
+        be shown all their repositories. Depending on how the person made them, it will appear
+        <span>their most used language</span> (the main language used to build them), <span>
+        description</span> (if there's one) and in all cases, <span>repository's title</span>, 
+        which you can use as a link to go see the person's work more closely.
+      </p>
+    </div>
+    
+    <div id="caixa-de-input-para-busca">
+      <h3>Find a programmer</h3>
+      <p>
+        Find a programmer using their Github profile's name. 
+        If the account really exists, it will
+        be shown the repositories from that person (at most 50 to be exact).
+      </p>
+      <p><strong>
+        If the account doesn't exists nothing will be shown.
+      </strong></p>
+      <div id="caixa-btn-input">
+        <input id="input-busca" type="text" placeholder="Github's username">
+        <button id="btn-buscar-info">Search</button>
+      </div>
+    </div>
+
+    <section id="div-repositorios">
+      
+      
+    </section>
+
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
